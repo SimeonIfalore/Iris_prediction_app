@@ -42,4 +42,4 @@ if (iris ==  0):
 elif (iris == 1 ):
    st.image(versicolor, width = 350,  caption='Versicolor')
 else:
-    st.image(virginca, width = 350,  caption='Virginica')
+    st.image(virginica, width = 350,  caption='Virginica')
