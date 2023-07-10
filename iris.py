@@ -11,8 +11,8 @@ st.title('Iris Data prediction app')
 #adding images
 from PIL import Image
 setosa = Image.open("iris_setosa.jpg")
-virginica = Image.open("iris_virginica.jpg")
-versicolor = Image.open("iris_virginica.jpg")
+virginica = Image.open("Iris_virginica.jpg")
+versicolor = Image.open("iris_versicolor.jpg")
 
 def user_report():
   sepal_length = st.sidebar.slider('sepal.length', 4.3, 10.0, 0.1)
