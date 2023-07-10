@@ -10,8 +10,9 @@ iris_data = pickle.load(open("irismodel.sav", 'rb'))
 st.title('Iris Data prediction app')
 #adding images
 from PIL import Image
-image = Image.open("pexels-aaron-burden-2471455.jpg")
-st.image(image, width = 350,  caption='A specie of Iris flower')
+setosa = Image.open("iris_setosa.jpg")
+virginica = Image.open("iris_virginica.jpg")
+versicolor = Image.open("iris_virginica.jpg")
 
 def user_report():
   sepal_length = st.sidebar.slider('sepal.length', 4.3, 10.0, 0.1)
@@ -37,8 +38,8 @@ iris = iris_data.predict(user_data)
 st.subheader('iris prediction')
 
 if (iris ==  0):
-    st.success("Setosa")
+    st.image(setosa, width = 350,  caption='Setosa')
 elif (iris == 1 ):
-    st.success("Versicolor")
+   st.image(versicolor, width = 350,  caption='Versicolor')
 else:
-    st.success("Virginca")
+    st.image(virginca, width = 350,  caption='Virginica')
