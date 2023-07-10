@@ -11,7 +11,7 @@ st.title('Iris Data prediction app')
 #adding images
 from PIL import Image
 image = Image.open("pexels-aaron-burden-2471455.jpg")
-st.image(image, width = 200,  caption='A specie of Iris flower')
+st.image(image, width = 350,  caption='A specie of Iris flower')
 
 def user_report():
   sepal_length = st.sidebar.slider('sepal.length', 4.3, 10.0, 0.1)
